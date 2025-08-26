@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage - Avanilla Singh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>My Webpage</h1>
+            </div>
+            <div class="header-right">
+                <span>Diksha Soni</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <ul class="nav-list">
+                <li>
+                    <a href="#about" class="nav-item active" onclick="scrollToSection('about')">
+                        <i class="fas fa-user"></i>
+                        About me
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="nav-item" onclick="scrollToSection('skills')">
+                        <i class="fas fa-cogs"></i>
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="#education" class="nav-item" onclick="scrollToSection('education')">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-item" onclick="scrollToSection('contact')">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobileMenu()"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Welcome to My Page</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="photo.jpeg" 
+                             alt="Professional headshot">
+                    </div>
+                    <div class="about-text">
+                        <h3>About Me</h3>
+                        <p>Hello! I'm DIKSHA SONI .I am passionate web developer with expertise in creating dynamic, user-friendly websites and applications. With a strong foundation in both front-end and back-end technologies, I love turning ideas into digital reality.</p>
+                        <p>My journey in web development has been driven by curiosity and a desire to solve complex problems through clean, efficient code. I'm constantly learning new technologies and staying up-to-date with industry trends.</p>
+                        <div class="tags">
+                            <span class="tag">Creative</span>
+                            <span class="tag">Problem Solver</span>
+                            <span class="tag">Team Player</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>My Skills</h2>
+                    <div class="section-divider"></div>
+                    <p>Here are the technologies and tools I work with to bring ideas to life</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5" style="color: #e34c26;"></i>
+                            <h3>HTML5</h3>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                        <p>90%</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
+                            <h3>CSS3</h3>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                        <p>85%</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square" style="color: #f7df1e;"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                        <p>60%</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-react" style="color: #61dafb;"></i>
+                            <h3>React</h3>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                        <p>50%</p>
+                    </div>
+                  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Education</h2>
+                    <div class="section-divider"></div>
+                    <p>My academic journey and continuous learning path</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-period">2023 - 2027</span>
+                            <h3>Bachelor of Computer Science and engineering</h3>
+                            <h4>AKS University</h4>
+                            <p>Focused on software engineering, web development, and database management.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-period">2022 - 2023</span>
+                            <h3>Higher Secondary Education</h3>
+                            <h4>Sindhu Hr. sec. School</h4>
+                            <p> Got 85% From PCM</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-period">2020 - 2021</span>
+                            <h3>Secondary Education</h3>
+                            <h4>Sindhu Hr. sec. School</h4>
+                            <p>Completed general education with focus on science and mathematics.Got 75% in secondary education</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <div class="section-divider"></div>
+                    <p>I'm always interested in hearing about new opportunities and projects</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>dikshasoni345742@email.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 1234567890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Satna (M.P)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="#">linkedin.com/in/diksha-soni</a>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h4>Follow Me</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Send Message</h3>
+                        <form onsubmit="handleSubmit(event)">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 <span>Diksha soni</span> All rights reserved.</p>
+            <p>Designed & Developed by <span>Diksha soni</span></p>
+            
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
